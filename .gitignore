@@ -1,0 +1,6 @@
+# Directory
+node_modules/
+
+# dotfile
+.sass-cache
+.DS_Store
