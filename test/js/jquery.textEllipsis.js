@@ -7,7 +7,7 @@
 @class 文字数制限プラグイン
 */
 
-$.fn.textLimit = function(op){
+$.fn.ellipsis = function(op){
   /**
   * optionです。
   * - afterText {String} : 語尾に追加される文字

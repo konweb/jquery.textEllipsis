@@ -4,17 +4,23 @@
 	<meta charset="UTF-8">
 	<title>sample</title>
 	<link rel="stylesheet" href="css/style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="js/jquery.textEllipsis.js"></script>
 </head>
 <body>
 	<header>
 		<h1>jquery.textEllipsis</h1>
 	</header>
 
+	<script>
+		$(function(){
+			$(".target").ellipsis({limit: 100});
+		});
+	</script>
+
 	<p class="target">
 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas animi, accusantium dolorem. Cum quibusdam reprehenderit blanditiis deleniti dignissimos, explicabo ea eius tempora maiores modi nam qui magni. Corporis, explicabo fugiat.
 	</p>
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script src="js/jquery.textEllipsis.js"></script>
 </body>
 </html>
