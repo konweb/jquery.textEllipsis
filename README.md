@@ -23,6 +23,6 @@ jQueryを読み込ませます。
 
 ###option
 - `limit` - 制限する文字数
-- `afterText` - 末尾に追加する文字 ※デフォルトは「...」
+- `afterText` - 末尾に追加する文字 ※デフォルトは「...」ddd
 
 ##[Demo](http://konweb.github.io/jquery.textEllipsis/test)
