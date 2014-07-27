@@ -54,10 +54,10 @@ module.exports = (grunt) ->
         files: ['<%= dir.sass %>/*.sass']
         tasks: ['sass','autoprefixer','cmq']
 
-      #css
-      css:
-        files: ['<%= dir.css %>/*.css','!<%= dir.css %>/min.css'] # ウォッチ対象として、ディレクトリ配下の*.cssを指定
-        tasks: ['cssmin']
+      # #css
+      # css:
+      #   files: ['<%= dir.css %>/*.css','!<%= dir.css %>/min.css'] # ウォッチ対象として、ディレクトリ配下の*.cssを指定
+      #   tasks: ['cssmin']
 
       html:
         files: ['<%= dir.root %>/**/*.jade']

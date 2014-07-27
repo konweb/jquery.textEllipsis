@@ -20,11 +20,7 @@ $.fn.ellipsis = function(op){
 
   return this.each(function(e){
     var $this;
-    if($(this).find("a").length > 0){
-      $this = $(this).children("a:last-child");
-    }else{
-      $this = $(this);
-    }
+    $this = $(this);
 
     var i,
         text = $this.text().trim(),

@@ -13,9 +13,13 @@ body
 
 	script.
 		$(function(){
-			$(".target").ellipsis({limit: 100});
+			$(".target1").ellipsis({limit: 100});
+			$(".target2").ellipsis({limit: 70});
+			$(".target3").ellipsis({limit: 40});
+			$(".target4").ellipsis({limit: 60});
+			$(".target5").ellipsis({limit: 20});
 		});
 
 - for(var i = 0;i < 5;i++)
-	p(class="target"+(i+1))
+	p(class="target target"+(i+1))
 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas animi, accusantium dolorem. Cum quibusdam reprehenderit blanditiis deleniti dignissimos, explicabo ea eius tempora maiores modi nam qui magni. Corporis, explicabo fugiat.
