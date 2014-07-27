@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title="sample"
+	link(rel="stylesheet" href="css/style.css")
+	script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js")
+	script(src="js/jquery.textEllipsis.js")
+
+body
+	header
+		h1 jquery.textEllipsis
+
+	script.
+		$(function(){
+			$(".target").ellipsis({limit: 100});
+		});
+
+- for(var i = 0;i < 5;i++)
+	p(class="target"+(i+1))
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas animi, accusantium dolorem. Cum quibusdam reprehenderit blanditiis deleniti dignissimos, explicabo ea eius tempora maiores modi nam qui magni. Corporis, explicabo fugiat.

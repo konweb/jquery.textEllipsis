@@ -8,6 +8,18 @@ module.exports = (grunt) ->
       root: 'test/'
       sass: 'test/sass'
       css: 'test/css'
+      js: 'test/js'
+      img: 'test/images'
+
+    #Jade Compile
+    jade:
+      compile:
+        options:
+          pretty: true
+          data:
+            year: '<%= grunt.template.today("yyyy") %>'
+        files:
+          "<%= dir.root %>/index.html": "<%= dir.root %>/index.jade"
 
     # Sass Compile
     sass:
@@ -37,16 +49,19 @@ module.exports = (grunt) ->
 
     # Monitoring
     watch:
-      options:
-        livereload: true
-
       #sass
       sass:
         files: ['<%= dir.sass %>/*.sass']
         tasks: ['sass','autoprefixer','cmq']
 
+      #css
+      css:
+        files: ['<%= dir.css %>/*.css','!<%= dir.css %>/min.css'] # ウォッチ対象として、ディレクトリ配下の*.cssを指定
+        tasks: ['cssmin']
+
       html:
-        files: ['<%= dir.root %>/**/*.html']
+        files: ['<%= dir.root %>/**/*.jade']
+        tasks: ['jade']
 
   # Package Load
   for taskName of pkg.devDependencies
