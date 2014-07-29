@@ -14,12 +14,30 @@ h1 {
 	background: #1e6e94;
 }
 
+.box {
+	clear: both;
+}
+
 .target {
 	float: left;
 	font-size: 14px;
 	width: 200px;
 	margin: 10px;
 	padding: 10px;
+	border: solid 1px #cccccc;
+	background: #e9e9e9;
+	word-break: break-all;
+}
+
+.target2 {
+	font-size: 13px;
+	border: solid 1px #cccccc;
+	background: #f8f7f3;
+}
+
+#t8-lines {
+	width: 200px;
+	margin: 10px;
 	border: solid 1px #cccccc;
 	background: #e9e9e9;
 }
