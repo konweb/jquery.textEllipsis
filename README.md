@@ -16,13 +16,14 @@ jQueryを読み込ませます。
 ```
 <script>
 	$(function(){
-		$(".target").ellipsis({limit: 100});
+		$(".target1").ellipsis({lines: 2});
+		$(".target2").ellipsis({lines: 3});
 	});
 </script>
 ```
 
 ###option
-- `limit` - 制限する文字数
+- `lines` - 制限する文字数
 - `afterText` - 末尾に追加する文字 ※デフォルトは「...」
 
 ##[Demo](http://konweb.github.io/jquery.textEllipsis/test)
